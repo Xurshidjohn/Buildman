@@ -1,4 +1,4 @@
 [install] = <gcc main.c -o bin/app>
-[clear] = <rm bin/app>
-[zero] = <rm zero>
+[clear] = <DEL bin/app>
 [xurshid] = <loveme xurshid>	
+[run] = <cd bin & app.exe>

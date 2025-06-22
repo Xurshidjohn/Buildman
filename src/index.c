@@ -38,27 +38,15 @@ void get_config_keys() {
     char *configCodes = malloc(sizeof(char) * 1000);
 
     FILE * file = fopen("build.lake", "r");
-    int i =0;
-    int key_i = 0;
-    char key_val[100];
-    int temp = 0;
-    char ch;
+    int i =0;int key_i = 0;char key_val[100];int temp = 0;char ch;
     while((ch = fgetc(file)) != EOF) {
         if(ch == '[') {
-            temp = 1;
-            key_val[0] = '\0';
-            key_i = 0;
-            i++;
-            continue;
+            temp = 1;key_val[0] = '\0';key_i = 0;i++;continue;
         }
 
         if(ch == ']') {
-            key_val[key_i] = '\0';
-            strcpy(keys[global_key_i].value, key_val);global_key_i++;
-            key_val[0] = '\0';
-            temp = 0;
-            i++;
-            continue;
+            key_val[key_i] = '\0';strcpy(keys[global_key_i].value, key_val);global_key_i++;
+            key_val[0] = '\0';temp = 0;i++;continue;
         }
         if (temp == 1) {
             key_val[key_i++] = ch;
@@ -70,18 +58,11 @@ void get_config_keys() {
 void get_config_values() {
     char *configCodes = malloc(sizeof(char) * 1000);
 
-    FILE * file = fopen("build.lake", "r");
-    int i =0;
-    int key_i = 0;
-    char key_val[100];
-    int temp = 0;
-    char ch;
+    FILE * file = fopen("build.lake", "r");int i =0;int key_i = 0;
+    char key_val[100];int temp = 0;char ch;
     while((ch = fgetc(file)) != EOF) {
         if(ch == '<') {
-            temp = 1;
-            key_val[0] = '\0';
-            key_i = 0;
-            continue;
+            temp = 1;key_val[0] = '\0';key_i = 0;continue;
         }
 
         if(ch == '>') {
