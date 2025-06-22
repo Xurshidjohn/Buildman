@@ -1,7 +1,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	gcc src/index.c -o lake
-	mv lake /usr/local/bin
+	sudo mv lake /usr/local/bin
 fi
 
 if [[ "$OSTYPE" == "msys" ]]; then
