@@ -14,7 +14,7 @@ git clone https://github.com/xurshidjohn/lake.git
 ```
 ### and open git bash
 ```
-cd Downloads && cd lake-main/lake-main & bash ./install.sh
+cd Downloads && cd lake-main/lake-main && bash ./install.sh
 ```
 
 ## in Linux
@@ -24,5 +24,5 @@ git clone https://github.com/xurshidjohn/lake.git
 ```
 ### and open terminal
 ```
-cd Downloads && cd lake-main/lake-main & bash ./install.sh
+cd Downloads && cd lake-main/lake-main && bash ./install.sh
 ```
