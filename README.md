@@ -28,7 +28,7 @@ git clone https://github.com/xurshidjohn/lake.git
 ```
 ### and open terminal
 ```
-cd Downloads && cd lake-main/lake-main && bash ./install.sh
+cd lake && bash ./install.sh
 ```
 
 # How to using Lake
