@@ -6,5 +6,5 @@ fi
 
 if [[ "$OSTYPE" == "msys" ]]; then
 	gcc src/index.c -o lake
-	setx PATH "C:/Users/$USERNAME/Downloads/lake"
+	setx PATH "C:/Users/$USERNAME/Downloads/lake-main/lake-main"
 fi
