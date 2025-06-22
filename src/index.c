@@ -35,7 +35,7 @@ int get_value_index_on_array(char value[100]) {
 void get_config_keys() {
     char *configCodes = malloc(sizeof(char) * 1000);
 
-    FILE * file = fopen("build.config", "r");
+    FILE * file = fopen("build.lake", "r");
     int i =0;
     int key_i = 0;
     char key_val[100];
