@@ -15,21 +15,23 @@ int global_key_i = 0;
 int global_val_i = 0;
 
 int get_key_index_on_array(char key[100]) {
-    for (int i = 0; i < (sizeof(keys) / sizeof(keys[0])); i++) {
+    for (int i = 0; i < global_key_i; i++) {
         if (strcmp(keys[i].value, key) == 0) {
             return i;
             break;
         }
     }
+    return -1;
 }
 
 int get_value_index_on_array(char value[100]) {
-    for (int i = 0; i < (sizeof(values) / sizeof(values[0])); i++) {
+    for (int i = 0; i < global_val_i; i++) {
         if (strcmp(values[i].value, value) == 0) {
             return i;
             break;
         }
     }
+    return -1;
 }
 
 void get_config_keys() {
